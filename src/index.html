@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendan's Portfolio</title>
+    <link rel="icon" type="image/png" href="../assets/img/icon.png">
+</head>
+<body>
+    <main>
+        <section  id="myProgress">
+            <div id="myBar"></div>
+            <!-- https://www.w3schools.com/howto/howto_js_progressbar.asp -->
+        </section>
+        <div class="tooltip">Hover over me
+        <span class="tooltiptext">What is the junk in my trunk</span>
+        </div>
+        <section id="loaded">
+            <a href="pages/art.html">ART</a>
+            <h1>Brendan's Portfolio</h1>
+            <p>Hey-o! This is Brendan Trieu's portfolio, a place where I delve further into my projects the process and a bunch of other random stuff.</p>
+            <p>As a game designer, I like to play games, make games, and talk about games. I am also very passionate about drawing and animating which you can see in my games.</p>
+            <p>Click around and read! If not, sit around and lets talk. Umm... come here often?</p>
+
+            <blockquote>"The fish that leaps the highest, tastes the greatest" - Brendan Trieu</blockquote>
+
+            <p><b>Other links</b></p>
+            <ol>
+                <li><a href="https://www.linkedin.com/in/brendan-trieu-882753266/">Linkedin</a></li>
+                <li><a href="https://luminice-star.itch.io/">itch.io</a></li>
+                <li><a href="https://github.com/Beepered">Github</a></li>
+                <li><a href="mailto:bktrieu@gmail.com">Email</a></li>
+            </ol>
+        </section>
+        
+    </main>
+    <footer>Copyright Brendan Trieu</footer>
+</body>
+<style>
+    #myProgress {
+        width: 75%;
+        background-color: #b4b4b4;
+    }
+    #myBar {
+        width: 1%;
+        height: 30px;
+        background-color: #0aaa62;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+</style>
+</html>
